@@ -45,9 +45,9 @@ models:
     staging:
       +materialized: view
       google_analytics:
-        +schema: stg_google_analytics
+        +schema: stg_google_analytics_4
       sales_database:
-        +schema: stg_sales_database
+        +schema: stg_dataset_fil_rouge
       google_sheets:
         +schema: stg_google_sheets
 

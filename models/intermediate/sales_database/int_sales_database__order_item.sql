@@ -8,7 +8,7 @@ SELECT oi.order_id,
     o.order_created_at,
     o.order_approved_at
 FROM
-{{ ref('stg_sales_database__order_item') }} AS oi
+{{ ref('stg_dataset_fil_rouge__order_item') }} AS oi
 INNER JOIN
-{{ ref('stg_sales_database__order') }} o
+{{ ref('stg_dataset_fil_rouge__order') }} o
 ON oi.order_id = o.order_id
