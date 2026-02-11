@@ -20,7 +20,7 @@ group by order_id,
 select order_id,
     SUM(feedback_score) as sum_feedback_score,
     COUNT(*) as total_feedbacks
-from {{ ref('stg_sales_database__feedback') }}
+from {{ ref('stg_dataset_fil_rouge__feedback') }}
 group by order_id
 
 )
@@ -39,4 +39,4 @@ select oi.order_id,
     coalesce(oi.total_distinct_items,0) as total_distinct_items
 from order_item_grouped_by_order as oi 
 left join feedback_grouped_by_order as f on f.order_id = oi.order_id
-left join {{ ref('stg_sales_database__user' )}} as u on u.user_id = oi.user_id
+left join {{ ref('stg_dataset_fil_rouge__user' )}} as u on u.user_id = oi.user_id
