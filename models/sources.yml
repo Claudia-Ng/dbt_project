@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: googles_analytics_4
-    schema: google_analytics_4
+  - name: googles_analytics
+    schema: google_analytics
     tables:
       - name: events_20210131
       
@@ -12,8 +12,8 @@ sources:
       - name: mapping_responsables_des_territoires
 
 
-  - name: dataset_fil_rouge
-    schema: dataset_fil_rouge
+  - name: sales_database
+    schema: sales_database
     tables:
       - name: feedback
       - name: payment
