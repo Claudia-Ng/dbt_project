@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_sales_database__feedback
+  - name: stg_dataset_fil_rouge__feedback
     description: "This model contains information about feedbacks provided by users on their orders"
     columns:
       - name: feedback_id
@@ -18,7 +18,7 @@ models:
               field: order_id
 
 
-  - name: stg_sales_database__order
+  - name: stg_dataset_fil_rouge__order
     description: "This model contains information about orders placed by users, including the status of each order."
     columns:
       - name: order_id
@@ -40,7 +40,7 @@ models:
               to: ref('stg_sales_database__user')
               field: user_id
 
-  - name: stg_sales_database__order_item
+  - name: stg_dataset_fil_rouge__order_item
     description: "This model contains information about each item included in an order, including its price, quantity, and shipping cost."
     columns:
       - name: order_item_id
@@ -58,7 +58,7 @@ models:
       - name: total_order_item_amount
         description: "The total amount for this order item, calculated as (price * quantity) + shipping_cost."
 
-  - name: stg_sales_database__payment
+  - name: stg_dataset_fil_rouge__payment
     description: "This model contains information about payments made for orders, including the sequential payment number."
     columns:
       - name: payment_id
@@ -74,7 +74,7 @@ models:
               to: ref('stg_sales_database__order')
               field: order_id
 
-  - name: stg_sales_database__product
+  - name: stg_dataset_fil_rouge__product
     description: "This model contains details of products available for sale, primarily focusing on information about the product's volume and size."
     columns:
       - name: product_id
@@ -83,7 +83,7 @@ models:
             - unique
             - not_null
 
-  - name: stg_sales_database__seller
+  - name: stg_dataset_fil_rouge__seller
     description: "This model contains information about the sellers who provide the products."
     columns:
       - name: seller_id
@@ -92,7 +92,7 @@ models:
             - unique
             - not_null
 
-  - name: stg_sales_database__user
+  - name: stg_dataset_fil_rouge__user
     description: "This model contains user-related information, including where they live."
     columns:
       - name: user_id
