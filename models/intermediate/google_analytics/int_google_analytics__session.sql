@@ -10,7 +10,7 @@ WITH session_data AS (
     MAX(traffic_medium) AS traffic_medium,
     MAX(traffic_source) AS traffic_source,
     MAX(traffic_name) AS traffic_name
-  FROM {{ ref('stg_google_analytics__event_flattened') }}
+  FROM {{ ref('stg_google_analytics_4__event_flattened') }}
   WHERE ga_session_id IS NOT NULL
   GROUP BY user_pseudo_id, ga_session_id
 )
