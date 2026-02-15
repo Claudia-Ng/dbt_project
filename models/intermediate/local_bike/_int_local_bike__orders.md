@@ -5,7 +5,6 @@ This model presents the monthly revenue. It was created by joining several table
 - **product_name**: product_name associated with the revenue.
 - **brand_name**: brand_name associated with the revenue.
 - **category_name**: store_id associated with the revenue.
-- **model_year**: Product model release year
 - **total_revenue**: Revenue computed as the sum of revenues from the stg_local_bike__order_items model.
 
 {% enddocs %}

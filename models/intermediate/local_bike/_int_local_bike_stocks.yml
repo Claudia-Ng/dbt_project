@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: _int_local_bike__stocks
+    description: '{{ doc("_int_local_bike__stocks") }}'
+    columns:
+      - name: product_id
+        description: "Primary key, unique identifier for each stock quantity."
+        tests:
+          - unique
+          - not_null

@@ -1,7 +1,7 @@
 select 
+ct.customer_id,
 city,
 state,
-product_id,
 product_name,
 brand_name,
 category_name,
@@ -14,10 +14,10 @@ left join {{ ref('stg_local_bike__products' )}} pd on oi.product_id = pd.product
 left join {{ ref('stg_local_bike__brands' )}} br on pd.brand_id = br.brand_id
 left join {{ ref('stg_local_bike__categories' )}} cg on pd.category_id = cg.category_id
 group by 
+ct.customer_id,
 city,
 state,
 product_name,
-product_id,
 brand_name,
 category_name,
 model_year

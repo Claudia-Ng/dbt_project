@@ -1,4 +1,4 @@
-{% docs _int_local_bike__highest_revenue_month %}
+{% docs int_local_bike__highest_revenue_month %}
 
 This model presents the monthly revenue, sorted in descending order. It was created by joining several tables such as order_items, orders, stores and staffs and incorporating multiple analytical dimensions.
 - **order_date**: The date associated with the revenue, reduced to monthly granularity to enable better monitoring.
