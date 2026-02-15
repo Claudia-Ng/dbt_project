@@ -1,0 +1,25 @@
+select 
+city,
+state,
+product_id,
+product_name,
+brand_name,
+category_name,
+model_year,
+round(sum(order_item_amount),2) as total_revenue
+from {{ ref('stg_local_bike__order_items' )}} oi
+left join {{ ref('stg_local_bike__orders' )}} o on o.order_id = oi.order_id
+left join {{ ref('stg_local_bike__customers' )}} ct on ct.customer_id = o.customer_id
+left join {{ ref('stg_local_bike__products' )}} pd on oi.product_id = pd.product_id
+left join {{ ref('stg_local_bike__brands' )}} br on pd.brand_id = br.brand_id
+left join {{ ref('stg_local_bike__categories' )}} cg on pd.category_id = cg.category_id
+group by 
+city,
+state,
+product_name,
+product_id,
+brand_name,
+category_name,
+model_year
+order by 
+total_revenue desc
