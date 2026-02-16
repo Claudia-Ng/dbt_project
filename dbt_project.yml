@@ -2,7 +2,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_first_dbt_project'
+name: 'my_second_dbt_project'
 version: '1.0.0'
 config-version: 2
 
@@ -40,24 +40,21 @@ models:
       relation: true
       columns: true
       
-  my_first_dbt_project:
+  my_second_dbt_project:
 
     staging:
       +materialized: view
-      google_analytics:
-        +schema: stg_google_analytics_4
-      dataset_fil_rouge:
-        +schema: stg_dataset_fil_rouge
-      google_sheets:
-        +schema: stg_google_sheets
+      local_bike: 
+        +schema: stg_local_bike
 
     intermediate:
       +materialized: view
-      dataset_fil_rouge: 
-        +schema: int_sales_database
-      google_analytics:
-        +schema: int_google_analytics
-    mart:
-      +schema: mart
-      +materialized: table
+      local_bike:
+        +schema: int_local_bike
+
+    +mart:
+      +local_bike:
+          materialized: table
+        
+ 
 

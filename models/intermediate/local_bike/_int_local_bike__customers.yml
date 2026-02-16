@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: int_local_bike__customers
+    description: '{{ doc("_int_local_bike__customers") }}'
+    columns:
+      - name: customer_city
+        description: "user city"

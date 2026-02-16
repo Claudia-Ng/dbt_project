@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_local_bike__orders
+    description: '{{ doc("_int_local_bike__orders") }}'
+    columns:
+      - name: order_date
+        description: "orders date"
+        tests:
+          - not_null
+          - unique

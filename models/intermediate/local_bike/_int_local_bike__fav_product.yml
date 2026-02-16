@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_local_bike__fav_product
+    description: '{{ doc("_int_local_bike__fav_product") }}'
+    columns:
+      - name: order_date
+        description: "Primary key, unique identifier for each total revenue."
+        tests:
+          - unique
+          - not_null
