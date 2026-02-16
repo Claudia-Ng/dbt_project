@@ -4,12 +4,9 @@ state as customer_state,
 pd.product_id,
 br.brand_id,
 cg.category_id,
-<<<<<<< HEAD
 product_name,
 brand_name,
 category_name,
-=======
->>>>>>> 91d9234723e7a8331c40c99e0b2308818abe0817
 model_year,
 round(sum(order_item_amount),2) as total_revenue
 from {{ ref('stg_local_bike__order_items' )}} oi
@@ -24,10 +21,7 @@ customer_state,
 pd.product_id,
 br.brand_id,
 cg.category_id,
-<<<<<<< HEAD
 product_name,
 brand_name,
 category_name,
-=======
->>>>>>> 91d9234723e7a8331c40c99e0b2308818abe0817
 model_year
