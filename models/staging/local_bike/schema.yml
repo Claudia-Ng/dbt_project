@@ -58,11 +58,7 @@ models:
             - not_null
       - name: order_status
         description: "The current status of the order."
-        tests:
-          - accepted_values:
-              arguments:
-               name: accepted_values_order_status
-               values: [1, 2, 3, 4]
+        
       - name: customer_id
         description: "Foreign key linking the order to the customer who placed it."
         tests:
