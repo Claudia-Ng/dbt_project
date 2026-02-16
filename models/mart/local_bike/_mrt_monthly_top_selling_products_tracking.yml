@@ -1,7 +1,11 @@
 version: 2
 
 models:
+<<<<<<< HEAD
   - name: mrt_monthly_top_selling_products_tracking
+=======
+  - name: _mrt_monthly_top_selling_products_tracking
+>>>>>>> 91d9234723e7a8331c40c99e0b2308818abe0817
     description: '{{ doc("_mrt_monthly_top_selling_products_tracking") }}'
     columns:
       - name: order_date
