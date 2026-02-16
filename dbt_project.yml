@@ -51,5 +51,10 @@ models:
       +materialized: view
       local_bike:
         +schema: int_local_bike
+
+    mart:
+      +materialized: table
+      local_bike:
+        
  
 
