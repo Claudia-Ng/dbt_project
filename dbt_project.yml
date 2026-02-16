@@ -54,7 +54,10 @@ models:
 
     +mart:
       +local_bike:
-          materialized: table
+          +materialized: table
+
+
+
         
  
 
