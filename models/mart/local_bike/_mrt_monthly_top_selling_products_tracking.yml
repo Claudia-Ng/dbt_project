@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: _mrt_monthly_top_selling_products_tracking
+    description: '{{ doc("_mrt_monthly_top_selling_products_tracking") }}'
+    columns:
+      - name: order_date
+        description: "Primary key, unique identifier for each total revenue."
+        tests:
+          - unique
+          - not_null

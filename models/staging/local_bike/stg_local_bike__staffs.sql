@@ -1,5 +1,6 @@
 select 
 staff_id,
+CONCAT(first_name,'-', last_name) AS staff_name,
 first_name,
 last_name,
 email,

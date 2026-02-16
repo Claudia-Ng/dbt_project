@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: _mrt_user_behavior_tracking
+    description: '{{ doc("_mrt_user_behavior_tracking") }}'

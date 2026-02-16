@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: _mrt_monthly_highest_revenue_products_tracking
+    description: '{{ doc("_mrt_monthly_highest_revenue_products_tracking") }}'
