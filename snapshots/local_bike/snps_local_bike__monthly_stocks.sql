@@ -3,17 +3,15 @@
 {{ 
     config(
         target_schema='snapshots',
-        unique_key='stock_id',
+        unique_key='product_id',
         strategy='check',
-        check_cols=['all']
+        check_cols=['stock_qty']
     ) 
 }}
 
 SELECT
-    stock_id,
-    store_id,
     product_id,
-    quantity_in_stock
-FROM {{ ref('stg_local_bike__stocks') }}
+    stock_qty
+FROM {{ ref('int_local_bike__stocks') }}
 
 {% endsnapshot %}

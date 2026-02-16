@@ -4,13 +4,12 @@ snapshots:
   - name: snps_local_bike__monthly_stocks
     description: "Historical snapshot of product stock levels."
     columns:
-      - name: stock_id
+      - name: product_id
         description: "Unique identifier of the product."
         tests:
           - not_null
-          - unique
 
-      - name: quantity_in_stock
+      - name: stock_qty
         description: "Quantity available in stock at the time of snapshot."
         tests:
           - stockout:
