@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: _mrt_stock_tracking
+  - name: mrt_stock_tracking
     description: '{{ doc("_mrt_stock_tracking") }}'
     columns:
       - name: product_name
