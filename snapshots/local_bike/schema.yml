@@ -13,6 +13,6 @@ snapshots:
       - name: quantity_in_stock
         description: "Quantity available in stock at the time of snapshot."
         tests:
-          - test_stockout:
+          - stockout:
               config:
                 severity: warn

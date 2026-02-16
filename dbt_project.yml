@@ -52,9 +52,9 @@ models:
       local_bike:
         +schema: int_local_bike
 
-    mart:
-      +materialized: table
-      local_bike:
+    +mart:
+      +local_bike:
+          materialized: table
         
  
 

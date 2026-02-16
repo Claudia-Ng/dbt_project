@@ -1,4 +1,4 @@
-{% docs int_local_bike__stocks %}
+{% docs _int_local_bike__stocks %}
 
 This model provides a comparison between the stock of products and the quantities sold for each product.
 - **product_id**: product_id associated with the stock.

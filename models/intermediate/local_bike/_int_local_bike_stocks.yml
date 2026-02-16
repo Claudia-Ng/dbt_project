@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: _int_local_bike__stocks
+  - name: int_local_bike__stocks
     description: '{{ doc("_int_local_bike__stocks") }}'
     columns:
       - name: product_id

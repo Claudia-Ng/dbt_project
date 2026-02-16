@@ -1,4 +1,4 @@
-{% docs int_local_bike__orders %}
+{% docs _int_local_bike__orders %}
 
 This model presents the monthly revenue. It was created by joining several tables such as order_items, orders, products, brands and categories and incorporating multiple analytical dimensions.
 - **order_date**: The date associated with the revenue, reduced to monthly granularity to enable better monitoring.
