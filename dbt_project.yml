@@ -40,7 +40,7 @@ models:
       relation: true
       columns: true
       
-  my_first_dbt_project:
+  my_second_dbt_project:
 
     staging:
       +materialized: view
