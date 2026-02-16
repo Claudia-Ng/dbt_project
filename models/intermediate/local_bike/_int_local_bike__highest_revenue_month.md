@@ -5,6 +5,9 @@ This model presents the monthly revenue, sorted in descending order. It was crea
 - **favorite_product_id**: product_id associated with the revenue.
 - **staff_id**: staff_id associated with the revenue.
 - **store_id**: store_id associated with the revenue.
+- **product_name**: product_id associated with the revenue.
+- **brand_name**:product brand associated with the revenue.
+- **category_name**: product category associated with the revenue.
 - **total_quantity**: Montghly product sold derived from the monthly aggregation of order item quantities .
 
 {% enddocs %}
