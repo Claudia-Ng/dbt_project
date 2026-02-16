@@ -54,11 +54,10 @@ models:
 
     +mart:
       +local_bike:
-<<<<<<< HEAD
           +materialized: table
-=======
-          materialized: table
->>>>>>> 91d9234723e7a8331c40c99e0b2308818abe0817
+
+
+
         
  
 
