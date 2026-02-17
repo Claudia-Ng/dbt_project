@@ -27,7 +27,7 @@ stock as(
  a.product_id,
  product_name,
  category_name,
-  brand_name,
+ brand_name,
  COALESCE(t.stock_qty,0) as stock_qty,
  a.sales_qty
  from sales a
